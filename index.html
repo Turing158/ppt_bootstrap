@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+    <script src="bootstrap.js"></script>
+    <style>
+      .carousel-control-prev{
+        opacity: 0.3;
+        transition: all 500ms;
+      }
+      /*  */
+      .carousel-control-next{
+        opacity: 0.3;
+        transition: all 500ms;
+      }
+    </style>
+</head>
+<body>
+    <!-- 轮播 -->
+<div id="ppt" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+
+    <!-- 点 -->
+   
+   
+   <!-- 轮播图片 -->
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="top1.png" class="d-block" style="width:100%">
+     </div>
+     <div class="carousel-item">
+       <img src="top2.png" class="d-block" style="width:100%">
+     </div>
+     <div class="carousel-item">
+       <img src="top3.png" class="d-block" style="width:100%">
+     </div>
+     <div class="carousel-item">
+        <img src="top4.png" class="d-block" style="width:100%">
+      </div>
+   </div>
+   
+   <!-- 左右切换按钮 -->
+   <button class="carousel-control-prev" type="button" data-bs-target="#ppt" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#ppt" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+   </button>
+
+   <div class="carousel-indicators">
+    <button data-bs-target="#ppt" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#ppt" data-bs-slide-to="1"></button>
+    <button data-bs-target="#ppt" data-bs-slide-to="2"></button>
+    <button data-bs-target="#ppt" data-bs-slide-to="3"></button>
+  </div>
+ </div>
+</body>
+</html>
